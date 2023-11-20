@@ -1,0 +1,353 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    width: 200px;
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #00ab61;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+header .navbar li a:hover{
+    color: #00894e;
+    border-bottom: 2px solid #00894e;
+}
+
+
+
+.boutton-login{
+    padding: 10px 20px;
+    background: #00ab61;
+   margin-top: -10px;
+   text-transform:uppercase ; 
+}
+
+.boutton-login:hover{
+    background: #00894e;
+    transition: ease-out;
+}
+.titre-t{
+    color: #fff;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../image/banner2@1x.a779426f53b62df24140.jpg) ;
+    background-size: cover;
+}       
+
+.banner .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+
+.banner .contenu h2{
+    color: #1111;
+    font-size: 3em;
+    text-transform: capitalize;
+    
+    text-decoration: solid;
+    
+}
+
+.banner .contenu h2:nth-child(1){
+    color: #00894e;
+    
+}
+section{
+    padding: 200px;
+}
+.boutton{
+    font-size: 1em;
+    color: #fff;
+    background: #00894e;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.boutton:hover{
+    letter-spacing: 4px;
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titre-texte{
+    color: #00894e;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+    
+}
+.catalogue{
+    margin-top: -100px;
+}
+
+.catalogue .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.catalogue .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0,0.8);
+}
+
+.catalogue .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.catalogue .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+}
+
+.catalogue .contenu .box .texte{
+    text-align: center;
+    font-weight: 300px;
+    color: #1111;
+}
+
+.catalogue .contenu .box .texte h3{
+    font-weight: 400px;
+}
+
+.contact{
+    background-image: url(../image/téléchargement.png);
+    background-size: 100%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0,0.8);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-position: unset;
+}
+
+
+  
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0,0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: #00894e;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0,0.1);
+    background: rgba(228, 222, 222,);
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+
+
+header.sticky .navbar li a {
+    color: #00ab61;
+}
+
+header.sticky li a:hover{
+    color: #00894e;
+    border-bottom: 2px solid #00894e;
+}
+
+
+
+
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  .container {
+    margin-top: 100px;
+    padding: 16px;
+    margin-bottom: 0px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Extra styles for the cancel button */
+ .cancelbtnsignup {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtnsignup, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  /* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+  
+  .box .libelle{
+    color: #00894e;
+  }
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtnsignup, .signupbtn {
+       width: 100%;
+    }
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
